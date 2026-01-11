@@ -1,0 +1,8 @@
+class N:
+    def __init__(s,v,l=None,r=None):
+        s.v=v;s.l=l;s.r=r
+def evalt(n):
+    if not n.l:
+        return int(n.v)
+    a=evalt(n.l);b=evalt(n.r)
+    return eval(str(a)+n.v+str(b))
