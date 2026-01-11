@@ -1,0 +1,12 @@
+n=int(input())
+bit=[0]*(n+1)
+def add(i,v):
+    while i<=n:
+        bit[i]+=v
+        i+=i&-i
+def sum(i):
+    s=0
+    while i>0:
+        s+=bit[i]
+        i-=i&-i
+    return s
