@@ -1,0 +1,11 @@
+class HelloWorld {
+    static void printMessage() {
+        System.out.println("Hello, World!");
+    }
+
+    public static void main(String[] args) {
+        printMessage();
+        System.out.println("Java Program Example");
+        System.out.println("Learning Java");
+    }
+}
